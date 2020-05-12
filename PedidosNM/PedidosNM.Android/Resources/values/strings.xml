@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="facebook_app_name">PedidosNM</string>
+  <string name="facebook_app_id">587624885214471</string>
+  <string name="fb_login_protocol_scheme">fb587624885214471</string>
+</resources>
+

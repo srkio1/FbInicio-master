@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PedidosNM.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="30,80,30,0">
+            <Label Text="User Settings" TextColor="#533F95" FontSize="25" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <StackLayout Spacing="15" VerticalOptions="CenterAndExpand">
+                <Entry Placeholder="User Name" Text="{Binding UserName}" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                <Entry Placeholder="Mobile Number" Keyboard="Numeric" Text="{Binding MobileNumber}" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                <Entry Placeholder="Email Address" Keyboard="Email" Text="{Binding Email}" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                <Entry Placeholder="Password" IsPassword="true" Text="{Binding Password}" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                <Button Text="Login" TextColor="White" BackgroundColor="#533F95" FontAttributes="Bold" BorderColor="White" BorderWidth="0.5" BorderRadius="10" HorizontalOptions="FillAndExpand" Command="{Binding LoginCommand}" />
+                <Button BackgroundColor="#4768AD" 
+                        Command="{Binding LoginFacebookCommand}"
+                        HeightRequest="45"
+                        IsEnabled="{Binding IsEnabled}"
+                        ImageSource="ic_fb"
+                        Text="Login Facebook"
+                        TextColor="#FFFFFF"/>
+                <Entry Text="{Binding Usuario}" Placeholder="Nombre" />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
